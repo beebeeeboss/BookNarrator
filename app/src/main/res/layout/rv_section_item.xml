@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvBook"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="14dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBookCover"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/book_cover_image"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/book_cover" />
+
+        <TextView
+            android:id="@+id/tvBookTitle"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.25"
+            android:lineSpacingExtra="8sp"
+            android:maxLines="2"
+            android:minLines="1"
+            android:padding="10dp"
+            android:text="@string/book_title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBookCover"
+            app:layout_marginBaseline="10dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
