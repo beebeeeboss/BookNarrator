@@ -40,7 +40,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/book_bk" />
+                        app:srcCompat="@drawable/background_image" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -51,24 +51,49 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="0dp"
-                            android:layout_height="102dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/user_logo" />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <TextView
-                            android:id="@+id/tvAppName"
-                            android:layout_width="0dp"
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="3"
-                            android:text="@string/app_name"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/holo_red_light"
-                            android:textSize="40sp"
+                            android:layout_weight="1"
+                            android:autoText="false"
+                            android:elegantTextHeight="true"
+                            android:fontFamily="@font/coiny"
+                            android:freezesText="false"
+                            android:includeFontPadding="true"
+                            android:padding="10dp"
+                            android:paddingStart="15dp"
+                            android:paddingLeft="15dp"
+                            android:scrollbarSize="6dp"
+                            android:text="BOOK NARATOR"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textColorHighlight="#5E4545"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="30dp"
                             android:textStyle="bold" />
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                         android:id="@+id/profile_image"
+                         android:layout_width="96dp"
+                         android:layout_height="96dp"
+                         android:src="@drawable/avatar"
+                         app:civ_border_width="2dp"
+                         app:civ_border_color="#FF000000"
+                         >
+
+
+                     </de.hdodenhof.circleimageview.CircleImageView>
+
+
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
